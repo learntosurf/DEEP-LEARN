@@ -7,7 +7,7 @@
 
 
 
-## NLP 
+## Natural Language Processing
 
 
 
@@ -18,3 +18,9 @@
 
 
 ## Other Topics (Optimization, Normalization, Application)
+
+
+
+
+---
+Inspired by [bt22dr/deep-learning-papers](https://github.com/bt22dr/deep-learning-papers)
