@@ -23,4 +23,4 @@
 
 
 ---
-Inspired by [bt22dr/deep-learning-papers](https://github.com/bt22dr/deep-learning-papers)
+<sub>Inspired by [bt22dr/deep-learning-papers](https://github.com/bt22dr/deep-learning-papers)</sub>
