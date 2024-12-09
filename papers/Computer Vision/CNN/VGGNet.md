@@ -137,3 +137,16 @@ class VGG(nn.Module):
         x = x.view(x.size(0), -1)
         x = self.classifier(x)
         return x
+```
+- Flatten
+    ```python
+    x = x.view(x.size(0), -1)
+    ```
+    - 신경망의 첫번째 차원은 항상 batch size를 나타냄 (`x.size(0)`는 현재 입력된 tensor의 batch size를 가져옴)
+    - 나머지 차원은 `-1`로 설정하여 자동으로 계산되도록 함
+    - 다른 방법
+        ```python
+        x = torch.flatten(x, start_dim=1)
+        ```       
+- Conv layer가 2개 있는 block과 3개 있는 block을 따로 선언한 경우 
+[https://velog.io/@euisuk-chung/파이토치-파이토치로-CNN-모델을-구현해보자-VGGNet편](https://velog.io/@euisuk-chung/%ED%8C%8C%EC%9D%B4%ED%86%A0%EC%B9%98-%ED%8C%8C%EC%9D%B4%ED%86%A0%EC%B9%98%EB%A1%9C-CNN-%EB%AA%A8%EB%8D%B8%EC%9D%84-%EA%B5%AC%ED%98%84%ED%95%B4%EB%B3%B4%EC%9E%90-VGGNet%ED%8E%B8)
