@@ -5,17 +5,17 @@
 - AlexNet이 등장하며 이미지 분류 분야에서 CNN 모델이 주목받기 시작했으며, 2014년 VGGNet과 GoogleNet은 ILSVRC 대회에서 더 깊은 레이어를 쌓아 AlexNet보다 높은 성능을 보여줌
 - 깊은 신경망이 성능 향상에 미치는 영향을 실험적으로 입증한 초기 모델
 
-![VGGNet Architecture](https://github.com/user-attachments/assets/fa92564c-22bf-4df3-862c-01f17c51b639)
 
-### VGGNet 구조
+### VGGNet Architecture
+![VGGNet Architecture](https://github.com/user-attachments/assets/fa92564c-22bf-4df3-862c-01f17c51b639)
 
 - **Input**: 224x224 RGB image
 - **Component**:
   - **Convolution layers**: 
     - 3x3 filter, stride=1, padding=True
-    - 채널 수 증가: 64 → 128 → 256 → 512
+    - 채널 수 증가 (64 → 128 → 256 → 512)
   - **Pooling layers**:
-    - 2x2 filter, stride=2 (5개 사용)
+    - 2x2 filter, stride=2 
     - 공간적 크기 축소 (224 → 112 → 56 → 28 → 14 → 7)
   - **Fully Connected layers**:
     - 4096 → 4096 → 1000
@@ -31,15 +31,14 @@
 | **C**            | 13 conv. + 3 FC (16)| conv1 3개 추가                            |
 | **D → VGG16**    | 13 conv. + 3 FC (16)| C의 conv1 → conv3으로 수정                |
 | **E → VGG19**    | 16 conv. + 3 FC (19)| conv3 3개 추가                            |
----
 
 - VGGNet은 작은 filter (3x3)를 다층으로 쌓아 동일한 Receptive field를 구현:
   - [3x3 filter로 3번 conv] = [5x5 filter로 2번 conv] = [7x7 filter로 1번]
   - 비선형성 증가, 학습 파라미터 감소 (49→50→27)
 
-![Filter Size Comparison](https://github.com/user-attachments/assets/c75421a4-8f12-41a0-bc69-7d9f4511c338)
 
 ### VGG16 Dimension Changes
+![Filter Size Comparison](https://github.com/user-attachments/assets/c75421a4-8f12-41a0-bc69-7d9f4511c338)
 
 #### Input
 - **Input**: 224x224x3
