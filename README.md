@@ -3,7 +3,7 @@
 ### CNN Architecture
 - LeNet ([note](), [code]())  
 - AlexNet ([note](), [code]())  
-- VGGNet: Very Deep Convolutional Networks for Large-Scale Image Recognition ([note](), [code]())  
+- VGGNet: Very Deep Convolutional Networks for Large-Scale Image Recognition ([note, code](https://github.com/learntosurf/DEEP-LEARN/blob/main/papers/Computer%20Vision/CNN/VGGNet.md))  
 - InceptionNet v1~3 ([note](), [code]())  
 - ResNet ([note](), [code]())  
 - ResNeXt ([note](), [code]())  
@@ -42,6 +42,3 @@
 
 
 
-
----
-<sub>Inspired by [bt22dr/deep-learning-papers](https://github.com/bt22dr/deep-learning-papers)</sub>
