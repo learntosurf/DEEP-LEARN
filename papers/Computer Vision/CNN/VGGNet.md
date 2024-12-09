@@ -2,9 +2,8 @@
 
 [*Very Deep Convolutional Networks for Large-Scale Image Recognition (2014)*](https://arxiv.org/abs/1409.1556)
 
-- **AlexNet**이 등장하며 이미지 분류 분야에서 CNN 모델이 주목받기 시작했으며, 2014년 VGGNet과 GoogleNet은 ILSVRC 대회에서 더 깊은 레이어를 쌓아 AlexNet보다 높은 성능을 보여줌
+- AlexNet이 등장하며 이미지 분류 분야에서 CNN 모델이 주목받기 시작했으며, 2014년 VGGNet과 GoogleNet은 ILSVRC 대회에서 더 깊은 레이어를 쌓아 AlexNet보다 높은 성능을 보여줌
 - 깊은 신경망이 성능 향상에 미치는 영향을 실험적으로 입증한 초기 모델
-- **Small filters (3x3) 사용으로 depth 증가**
 
 ![VGGNet Architecture](https://github.com/user-attachments/assets/fa92564c-22bf-4df3-862c-01f17c51b639)
 
@@ -38,7 +37,7 @@
   - [3x3 filter로 3번 conv] = [5x5 filter로 2번 conv] = [7x7 filter로 1번]
   - 비선형성 증가, 학습 파라미터 감소 (49→50→27)
 
-![Filter Size Comparison](https://prod-files-secure.s3.us-west-2.amazonaws.com/fb5bd593-da83-4074-b951-d3fc15f4b957/46adb846-9410-4c86-9215-98940087e2ae/Screenshot_2024-12-08_at_3.01.45_PM.png)
+![Filter Size Comparison](https://github.com/user-attachments/assets/c75421a4-8f12-41a0-bc69-7d9f4511c338)
 
 ### VGG16 Dimension Changes
 
